@@ -269,7 +269,7 @@ img {
     margin-top: var(--spacing-sm);
 }
 
-.contact-form .form-message {
+.form-message {
     margin-top: var(--spacing-md);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius);
