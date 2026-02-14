@@ -7,8 +7,32 @@ interface ContactFormData {
   message: string;
 }
 
+function isValidOrigin(request: NextRequest): boolean {
+  const origin = request.headers.get('origin');
+  const host = request.headers.get('host');
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+  if (origin && host && new URL(origin).host === host) {
+    return true;
+  }
+
+  if (origin && siteUrl && new URL(origin).host === new URL(siteUrl).host) {
+    return true;
+  }
+
+  if (process.env.NODE_ENV === 'development') {
+    return true;
+  }
+
+  return false;
+}
+
 export async function POST(request: NextRequest) {
   try {
+    if (!isValidOrigin(request)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    }
+
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const body: ContactFormData = await request.json();
@@ -32,7 +56,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: 'Compacc Contact <onboarding@resend.dev>',
+      from: `Compacc Contact <${process.env.RESEND_FROM_EMAIL}>`,
       to: process.env.CONTACT_EMAIL!,
       replyTo: email,
       subject: `Contact Form: ${name}`,

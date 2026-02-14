@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p>{t('copyright')}</p>
+        <p>{t('copyright', { year: new Date().getFullYear() })}</p>
       </div>
     </footer>
   );
