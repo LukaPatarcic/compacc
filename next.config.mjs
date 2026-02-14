@@ -4,6 +4,15 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack: (config) => {
+    // Suppress next-intl extractor parsing warnings
+    const originalEntry = config.infrastructureLogging || {};
+    config.infrastructureLogging = {
+      ...originalEntry,
+      level: 'error',
+    };
+    return config;
+  },
   headers: async () => [
     {
       source: '/(.*)',
