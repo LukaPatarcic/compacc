@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "about": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Dobrodošli u Compacc",
+    "subtitle": "Vaš pouzdani partner za inovativna rešenja",
+    "cta": "Započnite"
+  },
+  "about": {
+    "title": "O nama",
+    "description": "Posvećeni smo pružanju izuzetnih usluga i rešenja prilagođenih vašim potrebama. Naš tim stručnjaka je posvećen tome da vam pomogne da ostvarite svoje ciljeve."
+  },
+  "services": {
+    "title": "Naše usluge",
+    "consulting": {
+      "title": "Konsalting",
+      "description": "Stručno vođenje koje vam pomaže da se nosite sa složenim izazovima."
+    },
+    "development": {
+      "title": "Razvoj",
+      "description": "Prilagođena rešenja napravljena da zadovolje vaše specifične zahteve."
+    },
+    "support": {
+      "title": "Podrška",
+      "description": "Kontinuirana pomoć koja osigurava vaš uspeh."
+    }
+  },
+  "contact": {
+    "title": "Kontaktirajte nas",
+    "description": "Spremni da počnete? Javite nam se danas.",
+    "cta": "Pošaljite email",
+    "form": {
+      "name": "Ime",
+      "namePlaceholder": "Vaše ime",
+      "email": "Email",
+      "emailPlaceholder": "vas@email.com",
+      "message": "Poruka",
+      "messagePlaceholder": "Kako vam možemo pomoći?",
+      "submit": "Pošaljite poruku",
+      "sending": "Slanje...",
+      "success": "Hvala! Vaša poruka je poslata.",
+      "error": "Nešto je pošlo naopako. Pokušajte ponovo."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Compacc. Sva prava zadržana."
+  }
+}

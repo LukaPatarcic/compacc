@@ -7,6 +7,8 @@
     --color-background: #ffffff;
     --color-background-alt: #f9fafb;
     --color-border: #e5e7eb;
+    --color-success: #10b981;
+    --color-error: #ef4444;
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     --max-width: 1200px;
     --spacing-sm: 0.5rem;
@@ -95,6 +97,35 @@ img {
     color: var(--color-primary);
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.lang-btn {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    color: var(--color-text-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.lang-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.lang-btn.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-background);
+}
+
 /* Hero Section */
 .hero {
     padding: var(--spacing-xl) 0;
@@ -123,13 +154,21 @@ img {
     padding: var(--spacing-sm) var(--spacing-lg);
     background-color: var(--color-primary);
     color: var(--color-background);
+    border: none;
     border-radius: var(--border-radius);
+    font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
     transition: background-color var(--transition);
 }
 
 .btn:hover {
     background-color: var(--color-primary-dark);
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 /* Sections */
@@ -185,6 +224,68 @@ img {
     font-size: 0.95rem;
 }
 
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: var(--spacing-lg) auto 0;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+.form-message {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.form-success {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+}
+
+.form-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--color-error);
+}
+
 /* Footer */
 .footer {
     background-color: var(--color-text);
@@ -216,6 +317,10 @@ img {
 @media (max-width: 480px) {
     .nav-links {
         display: none;
+    }
+
+    .lang-switcher {
+        margin-left: auto;
     }
 
     .hero h1 {
