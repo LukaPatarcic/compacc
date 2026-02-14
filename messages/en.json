@@ -47,5 +47,9 @@
   },
   "footer": {
     "copyright": "© 2026 Compacc. All rights reserved."
+  },
+  "NotFound": {
+    "message": "The page you're looking for doesn't exist.",
+    "backHome": "Back to Home"
   }
 }

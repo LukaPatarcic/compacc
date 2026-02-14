@@ -47,5 +47,9 @@
   },
   "footer": {
     "copyright": "© 2026 Compacc. Sva prava zadržana."
+  },
+  "NotFound": {
+    "message": "Stranica koju tražite ne postoji.",
+    "backHome": "Nazad na početnu"
   }
 }
