@@ -4,21 +4,20 @@ export default function Services() {
   const t = useTranslations('services');
 
   return (
-    <section id="services" className="section section-alt">
+    <section id="services" className="section section-alt services-section">
       <div className="container">
-        <h2>{t('title')}</h2>
-        <div className="services-grid">
-          <div className="service-card">
-            <h3>{t('consulting.title')}</h3>
-            <p>{t('consulting.description')}</p>
+        <div className="services-layout">
+          <div className="services-content">
+            <h2>{t('title')}</h2>
+            <p>{t('description')}</p>
           </div>
-          <div className="service-card">
-            <h3>{t('development.title')}</h3>
-            <p>{t('development.description')}</p>
-          </div>
-          <div className="service-card">
-            <h3>{t('support.title')}</h3>
-            <p>{t('support.description')}</p>
+          <div className="services-image">
+            <div className="services-image-wrapper">
+              <img
+                src="/images/services.webp"
+                alt={t('imageAlt')}
+              />
+            </div>
           </div>
         </div>
       </div>

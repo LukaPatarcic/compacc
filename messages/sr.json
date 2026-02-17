@@ -5,48 +5,74 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Dobrodošli u Compacc",
-    "subtitle": "Vaš pouzdani partner za inovativna rešenja",
-    "cta": "Započnite"
+    "title": "Pouzdan partner za savremeno poslovanje",
+    "subtitle": "Gradimo dugoročnu saradnju zasnovanu na profesionalnosti, odgovornosti i razumevanju potreba naših partnera.",
+    "cta": "Kontaktirajte nas"
   },
-  "about": {
-    "title": "O nama",
-    "description": "Posvećeni smo pružanju izuzetnih usluga i rešenja prilagođenih vašim potrebama. Naš tim stručnjaka je posvećen tome da vam pomogne da ostvarite svoje ciljeve."
+  "partners": {
+    "title": "Partneri",
+    "description": "Ukupno poverenje preko 30 godina",
+    "hp": {
+      "name": "HP",
+      "type": "Business Partner"
+    },
+    "kyocera": {
+      "name": "Kyocera",
+      "type": "Authorized Partner"
+    },
+    "dell": {
+      "name": "Dell",
+      "type": "Technology Partner"
+    },
+    "hytera": {
+      "name": "Hytera",
+      "type": "Partner"
+    }
   },
   "services": {
-    "title": "Naše usluge",
+    "title": "Usluge",
+    "description": "Započnite poziv direktno iz aplikacije, gde god da se nalazite. Ako planovi promena, rasporedi, otkazuje ili se ne pojavi. Izmenite dostupnost bilo kada da biste bili zakazani samo kada želite.",
+    "imageAlt": "Poslovni sastanak"
+  },
+  "features": {
+    "trade": {
+      "title": "Trade",
+      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
+    },
     "consulting": {
-      "title": "Konsalting",
-      "description": "Stručno vođenje koje vam pomaže da se nosite sa složenim izazovima."
+      "title": "Consulting",
+      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
     },
-    "development": {
-      "title": "Razvoj",
-      "description": "Prilagođena rešenja napravljena da zadovolje vaše specifične zahteve."
-    },
-    "support": {
-      "title": "Podrška",
-      "description": "Kontinuirana pomoć koja osigurava vaš uspeh."
+    "engineering": {
+      "title": "Engineering",
+      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
     }
+  },
+  "brands": {
+    "title": "Brendovi",
+    "description": "Sarađujemo sa vodećim svetskim brendovima kako bismo vam pružili najbolja rešenja."
   },
   "contact": {
     "title": "Kontaktirajte nas",
-    "description": "Spremni da počnete? Javite nam se danas.",
-    "cta": "Pošaljite email",
     "form": {
-      "name": "Ime",
-      "namePlaceholder": "Vaše ime",
-      "email": "Email",
-      "emailPlaceholder": "vas@email.com",
-      "message": "Poruka",
-      "messagePlaceholder": "Kako vam možemo pomoći?",
+      "namePlaceholder": "Ime",
+      "emailPlaceholder": "Email adresa",
+      "messagePlaceholder": "Napišite vašu poruku",
       "submit": "Pošaljite poruku",
       "sending": "Slanje...",
       "success": "Hvala! Vaša poruka je poslata.",
       "error": "Nešto je pošlo naopako. Pokušajte ponovo."
+    },
+    "company": {
+      "name": "Compacc d. o. o.",
+      "address": "Čitačka 35, 11253, Sremčica",
+      "phone": "+381 63 340 767",
+      "fax": "+381 63 340 767",
+      "email": "office@compacc.rs"
     }
   },
   "footer": {
-    "copyright": "© {year} Compacc. Sva prava zadržana."
+    "copyright": "Sva prava zadržana. Compacc d. o. o."
   },
   "NotFound": {
     "message": "Stranica koju tražite ne postoji.",

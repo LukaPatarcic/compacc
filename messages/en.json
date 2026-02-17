@@ -5,48 +5,74 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Welcome to Compacc",
-    "subtitle": "Your trusted partner for innovative solutions",
-    "cta": "Get Started"
+    "title": "Reliable partner for modern business",
+    "subtitle": "We build long-term partnerships based on professionalism, responsibility, and understanding our partners' needs.",
+    "cta": "Contact us"
   },
-  "about": {
-    "title": "About Us",
-    "description": "We are dedicated to providing exceptional services and solutions tailored to your needs. Our team of experts is committed to helping you achieve your goals."
-  },
-  "services": {
-    "title": "Our Services",
-    "consulting": {
-      "title": "Consulting",
-      "description": "Expert guidance to help you navigate complex challenges."
+  "partners": {
+    "title": "Partners",
+    "description": "Total trust over 30 years",
+    "hp": {
+      "name": "HP",
+      "type": "Business Partner"
     },
-    "development": {
-      "title": "Development",
-      "description": "Custom solutions built to meet your specific requirements."
+    "kyocera": {
+      "name": "Kyocera",
+      "type": "Authorized Partner"
     },
-    "support": {
-      "title": "Support",
-      "description": "Ongoing assistance to ensure your continued success."
+    "dell": {
+      "name": "Dell",
+      "type": "Technology Partner"
+    },
+    "hytera": {
+      "name": "Hytera",
+      "type": "Partner"
     }
   },
+  "services": {
+    "title": "Services",
+    "description": "Start your call straight from the app, wherever you happen to work. If plans change, reschedule, cancel, or mark a no-show. Edit your availability any time so you're only booked when you want to be.",
+    "imageAlt": "Business meeting"
+  },
+  "features": {
+    "trade": {
+      "title": "Trade",
+      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+    },
+    "engineering": {
+      "title": "Engineering",
+      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+    }
+  },
+  "brands": {
+    "title": "Brands",
+    "description": "We collaborate with leading global brands to provide you with the best solutions."
+  },
   "contact": {
-    "title": "Contact Us",
-    "description": "Ready to get started? Reach out to us today.",
-    "cta": "Email Us",
+    "title": "Contact us",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "email": "Email",
-      "emailPlaceholder": "your@email.com",
-      "message": "Message",
-      "messagePlaceholder": "How can we help you?",
-      "submit": "Send Message",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email Address",
+      "messagePlaceholder": "Write Your Message",
+      "submit": "Send message",
       "sending": "Sending...",
       "success": "Thank you! Your message has been sent.",
       "error": "Something went wrong. Please try again."
+    },
+    "company": {
+      "name": "Compacc d. o. o.",
+      "address": "Čitačka 35, 11253, Sremčica",
+      "phone": "+381 63 340 767",
+      "fax": "+381 63 340 767",
+      "email": "office@compacc.rs"
     }
   },
   "footer": {
-    "copyright": "© {year} Compacc. All rights reserved."
+    "copyright": "All rights reserved. Compacc d. o. o."
   },
   "NotFound": {
     "message": "The page you're looking for doesn't exist.",

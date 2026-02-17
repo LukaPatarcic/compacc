@@ -1,12 +1,11 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useTransition } from 'react';
 import { Locale } from '@/i18n/routing';
 
 export default function Header() {
-  const t = useTranslations('nav');
   const locale = useLocale();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -22,34 +21,25 @@ export default function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="/" className="logo">
-          Compacc
+          <img src="/images/logo.png" alt="Compacc" className="logo-image" />
         </a>
-        <ul className="nav-links">
-          <li>
-            <a href="#about">{t('about')}</a>
-          </li>
-          <li>
-            <a href="#services">{t('services')}</a>
-          </li>
-          <li>
-            <a href="#contact">{t('contact')}</a>
-          </li>
-        </ul>
-        <div className="lang-switcher">
-          <button
-            className={`lang-btn ${locale === 'en' ? 'active' : ''}`}
-            onClick={() => switchLocale('en')}
-            disabled={isPending}
-          >
-            EN
-          </button>
-          <button
-            className={`lang-btn ${locale === 'sr' ? 'active' : ''}`}
-            onClick={() => switchLocale('sr')}
-            disabled={isPending}
-          >
-            SR
-          </button>
+        <div className="nav-right">
+          <div className="lang-switcher">
+            <button
+              className={`lang-btn ${locale === 'sr' ? 'active' : ''}`}
+              onClick={() => switchLocale('sr')}
+              disabled={isPending}
+            >
+              SR
+            </button>
+            <button
+              className={`lang-btn ${locale === 'en' ? 'active' : ''}`}
+              onClick={() => switchLocale('en')}
+              disabled={isPending}
+            >
+              EN
+            </button>
+          </div>
         </div>
       </nav>
     </header>
