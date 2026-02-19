@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
 
     await resend.emails.send({
       from: `Compacc Contact <${process.env.RESEND_FROM_EMAIL}>`,
-      to: process.env.CONTACT_EMAIL!,
+      to: 'office@compacc.rs',
       replyTo: email,
       subject: `Contact Form: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
