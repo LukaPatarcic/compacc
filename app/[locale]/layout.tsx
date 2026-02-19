@@ -28,8 +28,8 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Compacc - IT Engineering, Consulting & Trade | Belgrade',
-    sr: 'Compacc - IT Inženjering, Konsalting i Trgovina | Beograd',
+    en: 'Compacc',
+    sr: 'Compacc',
   };
 
   const descriptions: Record<string, string> = {
