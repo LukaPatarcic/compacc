@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Roboto } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -111,6 +112,20 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N1G7940GCV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-N1G7940GCV');
+          `}
+        </Script>
+      </head>
       <body className={roboto.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
