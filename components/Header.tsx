@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useTransition } from 'react';
 import { Locale } from '@/i18n/routing';
+import Image from 'next/image';
 
 export default function Header() {
   const locale = useLocale();
@@ -21,7 +22,7 @@ export default function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="/" className="logo">
-          <img src="/images/logo.png" alt="Compacc" className="logo-image" />
+          <Image src="/images/logo.png" alt="Compacc" className="logo-image" width={150} height={40} quality={100} />
         </a>
         <div className="nav-right">
           <div className="lang-switcher">

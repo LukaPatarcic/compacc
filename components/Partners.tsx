@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 const partners = [
   {
@@ -43,7 +44,14 @@ export default function Partners() {
           {partners.map((partner) => (
             <div key={partner.id} className="partner-card">
               <div className="partner-logo">
-                <img src={partner.logo} alt={t(`${partner.nameKey}.name`)} />
+                <Image
+                  src={partner.logo}
+                  alt={t(`${partner.nameKey}.name`)}
+                  width={180}
+                  height={88}
+                  quality={100}
+                  style={{ objectFit: 'contain', width: 'auto', height: '100%', maxWidth: '180px' }}
+                />
               </div>
               <p className="partner-name">{t(`${partner.nameKey}.type`)}</p>
             </div>

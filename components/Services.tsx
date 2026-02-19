@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Services() {
   const t = useTranslations('services');
@@ -13,9 +14,13 @@ export default function Services() {
           </div>
           <div className="services-image">
             <div className="services-image-wrapper">
-              <img
+              <Image
                 src="/images/services.webp"
                 alt={t('imageAlt')}
+                width={588}
+                height={400}
+                quality={100}
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
           </div>

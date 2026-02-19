@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -6,9 +7,12 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-background">
-        <img
+        <Image
           src="/images/hero.webp"
           alt=""
+          fill
+          priority
+          quality={100}
         />
         <div className="hero-overlay"></div>
       </div>
