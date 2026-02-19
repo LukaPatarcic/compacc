@@ -2,8 +2,16 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import type { Metadata } from 'next';
+
+const roboto = Roboto({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '700'],
+  display: 'swap',
+  variable: '--font-roboto',
+});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://compacc.rs';
 
@@ -103,7 +111,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={roboto.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -11,7 +11,7 @@
   },
   "partners": {
     "title": "Partneri",
-    "description": "Ukupno poverenje preko 30 godina",
+    "description": "",
     "hp": {
       "name": "HP",
       "type": "Business Partner"
@@ -31,22 +31,31 @@
   },
   "services": {
     "title": "Usluge",
-    "description": "Započnite poziv direktno iz aplikacije, gde god da se nalazite. Ako planovi promena, rasporedi, otkazuje ili se ne pojavi. Izmenite dostupnost bilo kada da biste bili zakazani samo kada želite.",
+    "description": "Naše usluge obuhvataju planiranje, podršku i isporuku IT rešenja. Poseban fokus je na integraciji sistemskog i aplikativnog softvera radi pouzdanog, bezbednog i funkcionalnog poslovnog okruženja prilagođenog konkretnim potrebama.",
     "imageAlt": "Poslovni sastanak"
   },
   "features": {
     "trade": {
-      "title": "Trade",
-      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
+      "title": "Trgovina",
+      "description": "Obezbeđujemo kvalitetnu informatičku opremu renomiranih svetskih proizvođača, vodeći računa o specifičnim zahtevima svakog klijenta. Naš pristup podrazumeva pažljiv odabir pouzdanih i ekonomičnih rešenja koja pružaju sigurnost i dugoročnu eksploataciju."
     },
     "consulting": {
-      "title": "Consulting",
-      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
+      "title": "Konsalting",
+      "description": "Stručno savetovanje usmereno na unapređenje poslovanja kroz detaljnu analizu postojećeg stanja. Razvoj strategija i preporuka za implementaciju opreme i softverskih rešenja u skladu sa realnim potrebama i planiranim periodima upotrebe."
     },
     "engineering": {
-      "title": "Engineering",
-      "description": "Zakažite sastanke visoke vrednosti u sekundama i pretvorite zakazivanje u konkurentsku prednost."
+      "title": "Inžinjering",
+      "description": "Bavimo se projektovanjem i razvojem informatičkih rešenja oslanjajući se na stručno znanje i pozitivna iskustva. Kroz pažljivu analizu struktura, sistema i procesa oblikujemo stabilna, efikasna i dugoročno održiva rešenja koja podržavaju unapređenje poslovanja."
     }
+  },
+  "about": {
+    "title": "O nama",
+    "paragraphs": [
+      "COMPACC PREDUZEĆE ZA INŽENJERING, KONSALTING I TRGOVINU D.O.O. osnovano je 1993. godine kao društvo sa ograničenom odgovornošću u privatnom vlasništvu. Sedište kompanije nalazi se u Beogradu, opština Čukarica, Sremčica, Čitačka 35.",
+      "Kompanija je usmerena na direktnu saradnju sa krajnjim korisnicima. Tokom 33 godine poslovanja ostvarila je saradnju sa više od 600 klijenata iz oblasti energetike, naftne industrije, bankarstva, obrazovanja, nauke, turizma i drugih delatnosti.",
+      "Cilj nam je dugoročno partnerstvo i zadovoljstvo korisnika. U skladu sa svojim mogućnostima, kompanija je podržavala organizacije i udruženja za zaštitu prirode.",
+      "Kompanija poseduje bonitetnu ocenu AA+ koju dodeljuju relevantne kuće za procenu boniteta."
+    ]
   },
   "brands": {
     "title": "Brendovi",
@@ -54,6 +63,7 @@
   },
   "contact": {
     "title": "Kontaktirajte nas",
+    "description": "Ukazano poverenje preko 20 godina",
     "form": {
       "namePlaceholder": "Ime",
       "emailPlaceholder": "Email adresa",
@@ -64,15 +74,16 @@
       "error": "Nešto je pošlo naopako. Pokušajte ponovo."
     },
     "company": {
-      "name": "Compacc d. o. o.",
-      "address": "Čitačka 35, 11253, Sremčica",
-      "phone": "+381 63 340 767",
-      "fax": "+381 63 340 767",
+      "name": "COMPACC D.O.O. BEOGRAD",
+      "address": "Čitačka 35, 11253, Beograd, Sremčica",
+      "phone": "+381 11 2525445",
+      "phone2": "+381 11 2527137",
+      "mobile": "+381 63 340 767",
       "email": "office@compacc.rs"
     }
   },
   "footer": {
-    "copyright": "Sva prava zadržana. Compacc d. o. o."
+    "copyright": "All rights reserved. COMPACC D.O.O. BEOGRAD"
   },
   "NotFound": {
     "message": "Stranica koju tražite ne postoji.",

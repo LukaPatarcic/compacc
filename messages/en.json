@@ -11,7 +11,7 @@
   },
   "partners": {
     "title": "Partners",
-    "description": "Total trust over 30 years",
+    "description": "",
     "hp": {
       "name": "HP",
       "type": "Business Partner"
@@ -31,22 +31,31 @@
   },
   "services": {
     "title": "Services",
-    "description": "Start your call straight from the app, wherever you happen to work. If plans change, reschedule, cancel, or mark a no-show. Edit your availability any time so you're only booked when you want to be.",
+    "description": "Our services include planning, support, and delivery of IT solutions. A special focus is on integrating system and application software for a reliable, secure, and functional business environment tailored to specific needs.",
     "imageAlt": "Business meeting"
   },
   "features": {
     "trade": {
       "title": "Trade",
-      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+      "description": "We provide quality IT equipment from renowned global manufacturers, taking into account the specific requirements of each client. Our approach involves careful selection of reliable and economical solutions that provide security and long-term use."
     },
     "consulting": {
       "title": "Consulting",
-      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+      "description": "Expert consulting focused on business improvement through detailed analysis of the current state. Development of strategies and recommendations for implementing equipment and software solutions in accordance with real needs and planned usage periods."
     },
     "engineering": {
       "title": "Engineering",
-      "description": "Book high-value meetings in seconds and turn scheduling into a competitive advantage."
+      "description": "We design and develop IT solutions relying on expert knowledge and positive experiences. Through careful analysis of structures, systems, and processes, we shape stable, efficient, and long-term sustainable solutions that support business improvement."
     }
+  },
+  "about": {
+    "title": "About us",
+    "paragraphs": [
+      "COMPACC COMPANY FOR ENGINEERING, CONSULTING AND TRADE D.O.O. was founded in 1993 as a privately owned limited liability company. The company headquarters is located in Belgrade, municipality of Čukarica, Sremčica, Čitačka 35.",
+      "The company is focused on direct cooperation with end users. During 33 years of business, it has cooperated with more than 600 clients from the fields of energy, oil industry, banking, education, science, tourism, and other activities.",
+      "Our goal is long-term partnership and customer satisfaction. In accordance with its capabilities, the company has supported organizations and associations for nature protection.",
+      "The company has a credit rating of AA+ awarded by relevant credit rating agencies."
+    ]
   },
   "brands": {
     "title": "Brands",
@@ -54,6 +63,7 @@
   },
   "contact": {
     "title": "Contact us",
+    "description": "Trusted for over 20 years",
     "form": {
       "namePlaceholder": "Name",
       "emailPlaceholder": "Email Address",
@@ -64,15 +74,16 @@
       "error": "Something went wrong. Please try again."
     },
     "company": {
-      "name": "Compacc d. o. o.",
-      "address": "Čitačka 35, 11253, Sremčica",
-      "phone": "+381 63 340 767",
-      "fax": "+381 63 340 767",
+      "name": "COMPACC D.O.O. BEOGRAD",
+      "address": "Čitačka 35, 11253, Belgrade, Sremčica",
+      "phone": "+381 11 2525445",
+      "phone2": "+381 11 2527137",
+      "mobile": "+381 63 340 767",
       "email": "office@compacc.rs"
     }
   },
   "footer": {
-    "copyright": "All rights reserved. Compacc d. o. o."
+    "copyright": "All rights reserved. COMPACC D.O.O. BEOGRAD"
   },
   "NotFound": {
     "message": "The page you're looking for doesn't exist.",

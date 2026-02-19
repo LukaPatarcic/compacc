@@ -23,8 +23,8 @@
     --color-icon-yellow: #ffc107;
 
     /* Typography */
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    --font-family-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family-heading: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Spacing */
     --max-width: 1200px;
@@ -68,6 +68,7 @@ html {
 
 body {
     font-family: var(--font-family);
+    font-weight: 400;
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
@@ -142,7 +143,7 @@ img {
     color: var(--color-primary);
     cursor: pointer;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 400;
     transition: all var(--transition);
 }
 
@@ -174,7 +175,7 @@ img {
     border: 1px solid var(--color-primary);
     border-radius: var(--radius-md);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     transition: all var(--transition);
     text-decoration: none;
@@ -204,7 +205,7 @@ img {
     border: none;
     color: var(--color-primary);
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     transition: color var(--transition);
 }
@@ -269,6 +270,7 @@ img {
 
 .hero-subtitle {
     font-size: 1.25rem;
+    font-weight: 400;
     color: var(--color-background);
     line-height: 1.4;
     margin-bottom: var(--spacing-xl);
@@ -314,6 +316,7 @@ img {
 
 .section-description {
     font-size: 1.125rem;
+    font-weight: 400;
     color: var(--color-text-secondary);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
@@ -364,6 +367,7 @@ img {
 
 .partner-name {
     font-size: 1.125rem;
+    font-weight: 400;
     color: var(--color-text);
     text-align: center;
 }
@@ -394,6 +398,7 @@ img {
 
 .services-content p {
     font-size: 1.125rem;
+    font-weight: 400;
     color: var(--color-text-secondary);
     line-height: 1.6;
     text-align: left;
@@ -464,6 +469,7 @@ img {
 
 .feature-description {
     font-size: 1.125rem;
+    font-weight: 400;
     color: var(--color-text-secondary);
     line-height: 1.4;
 }
@@ -535,7 +541,7 @@ img {
     border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 1.125rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-text);
     transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -551,7 +557,7 @@ img {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.125rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-text);
     opacity: 0.7;
     pointer-events: none;
@@ -644,6 +650,7 @@ img {
 
 .contact-item span {
     font-size: 1.25rem;
+    font-weight: 400;
     color: var(--color-text);
 }
 
@@ -660,6 +667,81 @@ img {
     color: var(--color-primary);
 }
 
+.contact-phones {
+    align-items: flex-start;
+}
+
+.contact-phones-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm) var(--spacing-xl);
+}
+
+.contact-phones-list .contact-link {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text);
+    transition: color var(--transition);
+}
+
+.contact-phones-list .contact-link:hover {
+    color: var(--color-primary);
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+    padding: var(--spacing-3xl) 0 var(--spacing-4xl);
+}
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4xl);
+}
+
+.about-content {
+    flex: 1;
+    max-width: 516px;
+}
+
+.about-content h2 {
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-xl);
+}
+
+.about-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.about-paragraphs p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 588px;
+}
+
+.about-image-wrapper {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ==================== FOOTER ==================== */
 .footer {
     background-color: var(--color-background);
@@ -670,6 +752,7 @@ img {
 
 .footer p {
     font-size: 0.875rem;
+    font-weight: 400;
     color: var(--color-text-secondary);
 }
 
@@ -704,6 +787,19 @@ img {
     }
 
     .services-image {
+        max-width: 100%;
+    }
+
+    .about-layout {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-image {
         max-width: 100%;
     }
 
@@ -800,6 +896,15 @@ img {
     .contact-item span {
         font-size: 1rem;
     }
+
+    .contact-phones-list {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .contact-phones-list .contact-link {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -857,6 +962,7 @@ img {
 
 .not-found p {
     font-size: 1.25rem;
+    font-weight: 400;
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-lg);
 }

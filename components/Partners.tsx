@@ -33,9 +33,11 @@ export default function Partners() {
           <div className="section-header-left">
             <h2 className="section-title">{t('title')}</h2>
           </div>
-          <div className="section-header-right">
-            <p className="section-description">{t('description')}</p>
-          </div>
+          {t('description') && (
+            <div className="section-header-right">
+              <p className="section-description">{t('description')}</p>
+            </div>
+          )}
         </div>
         <div className="partners-grid">
           {partners.map((partner) => (
