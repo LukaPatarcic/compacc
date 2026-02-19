@@ -28,13 +28,13 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Compacc - Your Trusted Partner for Innovative Solutions',
-    sr: 'Compacc - Vaš pouzdan partner za inovativna rešenja',
+    en: 'Compacc - IT Engineering, Consulting & Trade | Belgrade',
+    sr: 'Compacc - IT Inženjering, Konsalting i Trgovina | Beograd',
   };
 
   const descriptions: Record<string, string> = {
-    en: 'Compacc provides innovative solutions and services to help your business grow. Contact us today to learn more.',
-    sr: 'Compacc pruža inovativna rešenja i usluge koje pomažu vašem poslovanju da raste. Kontaktirajte nas danas.',
+    en: 'Compacc is a Belgrade-based IT company offering IT solutions, consulting, and equipment trade. HP, Kyocera, Dell & Hytera partner. Trusted by 600+ clients since 1993.',
+    sr: 'Compacc je beogradska IT kompanija koja nudi IT rešenja, konsalting i trgovinu opremom. HP, Kyocera, Dell i Hytera partner. Preko 600 klijenata od 1993. godine.',
   };
 
   const title = titles[locale] || titles.en;
@@ -46,7 +46,7 @@ export async function generateMetadata({
       template: '%s | Compacc',
     },
     description,
-    keywords: ['compacc', 'solutions', 'services', 'business', 'innovation'],
+    keywords: ['compacc', 'IT solutions', 'IT consulting', 'IT equipment', 'HP partner', 'Kyocera partner', 'Dell partner', 'Belgrade', 'Serbia', 'inženjering', 'konsalting'],
     authors: [{ name: 'Compacc' }],
     creator: 'Compacc',
     metadataBase: new URL(siteUrl),
