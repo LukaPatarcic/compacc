@@ -599,7 +599,6 @@ img {
 }
 
 .form-message {
-    margin-top: var(--spacing-md);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     text-align: center;
