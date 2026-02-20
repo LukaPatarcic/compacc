@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Section from './Section';
 
 export default function About() {
   const t = useTranslations('about');
@@ -13,31 +14,29 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="section section-alt about-section">
-      <div className="container">
-        <div className="about-layout">
-          <div className="about-image">
-            <div className="about-image-wrapper">
-              <Image
-                src="/images/about.webp"
-                alt={t('title')}
-                width={588}
-                height={400}
-                quality={100}
-                style={{ width: '100%', height: 'auto' }}
-              />
-            </div>
+    <Section id="about" alt className="about-section">
+      <div className="about-layout">
+        <div className="about-image">
+          <div className="about-image-wrapper">
+            <Image
+              src="/images/about.webp"
+              alt={t('title')}
+              width={588}
+              height={400}
+              quality={100}
+              style={{ width: '100%', height: 'auto' }}
+            />
           </div>
-          <div className="about-content">
-            <h2>{t('title')}</h2>
-            <div className="about-paragraphs">
-              {paragraphs.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
+        </div>
+        <div className="about-content">
+          <h2>{t('title')}</h2>
+          <div className="about-paragraphs">
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

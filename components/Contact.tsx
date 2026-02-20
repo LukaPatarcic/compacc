@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, FormEvent } from 'react';
+import Section from './Section';
 
 const LocationIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,14 +107,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section contact-section">
-      <div className="container">
-        <div className="section-header">
-          <div className="section-header-left">
-            <h2 className="section-title">{t('title')}</h2>
-          </div>
+    <Section id="contact" className="contact-section">
+      <div className="section-header">
+        <div className="section-header-left">
+          <h2 className="section-title">{t('title')}</h2>
         </div>
-        <div className="contact-layout">
+      </div>
+      <div className="contact-layout">
           <form className="contact-form-wrapper" onSubmit={handleSubmit}>
             <div className="form-group">
               <input
@@ -192,7 +192,6 @@ export default function Contact() {
             </a>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

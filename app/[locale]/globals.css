@@ -420,15 +420,12 @@ img {
     display: block;
 }
 
-/* ==================== FEATURES SECTION ==================== */
-.features-section {
-    padding: 0 0 var(--spacing-4xl);
-}
-
+/* ==================== FEATURES ==================== */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-3xl);
+    margin-top: var(--spacing-4xl);
 }
 
 .feature-item {
@@ -766,6 +763,7 @@ img {
     .section-header-left,
     .section-header-right {
         max-width: 100%;
+        text-align: left;
     }
 
     .partners-grid {
@@ -779,11 +777,11 @@ img {
 
     .services-content {
         max-width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .services-content p {
-        text-align: center;
+        text-align: left;
     }
 
     .services-image {
@@ -791,12 +789,13 @@ img {
     }
 
     .about-layout {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: var(--spacing-xl);
     }
 
     .about-content {
         max-width: 100%;
+        text-align: left;
     }
 
     .about-image {
@@ -848,6 +847,10 @@ img {
         font-size: 1.75rem;
     }
 
+    .partners-section .section-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
@@ -869,6 +872,7 @@ img {
     .features-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
+        margin-top: var(--spacing-xl);
     }
 
     .brands-grid {
